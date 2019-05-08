@@ -17,10 +17,8 @@ agast = cv.AgastFeatureDetector_create()
 akaze = cv.AKAZE_create(threshold=0.001)
 orb = cv.ORB_create(nfeatures=1500)
 
-if not capture.isOpened:
-    print('Unable to open: ' + args.input)
-    exit(0)
 time = 0
+
 while True:
     ret, frame = capture.read()
     if frame is None:
