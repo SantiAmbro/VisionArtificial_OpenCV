@@ -5,6 +5,7 @@ import argparse
 def nothing(x):
     pass
 
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--facedet', type=str, help='Feature Detection method (FAST, AGAST, AKAZE, ORB).', default='FAST')
 args = parser.parse_args()
